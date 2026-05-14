@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wrap</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>WRAP</h1>
+    <nav>
+      <a href="fastfood.html" class="btn">Home</a>
+      <a href="cart.html" class="btn">Cart</a>
+    </nav>
+  </header>
+
+  <main class="items">
+    <div class="item-card">
+        <img src=shawarma.jpg height= 150 width= 200 alt="Shawarma">
+      <h3>Shawarma</h3>
+      <p>₹140</p>
+      <button onclick="addToCart('Shawarma',140)">Add to Cart</button>
+    </div>
+    <div class="item-card">
+        <img src=khaati.jpg height= 150 width= 200 alt="Khaati Roll">
+      <h3>Khaati Roll</h3>
+      <p>₹120</p>
+      <button onclick="addToCart('Khaati Roll',120)">Add to Cart</button>
+    </div>
+    <div class="item-card">
+        <img src=vegfrankie.jpg height= 150 width= 200 alt="Veg Frankie">
+      <h3>Veg Franki</h3>
+      <p>₹110</p>
+      <button onclick="addToCart('Veg Frankie',110)">Add to Cart</button>
+    </div>
+    <div class="item-card">
+        <img src=noodlesfrankie.jpg height= 150 width= 200 alt="Noodles Franki">
+      <h3>Noodles Frankie</h3>
+      <p>₹130</p>
+      <button onclick="addToCart('Noodles Franki',130)">Add to Cart</button>
+    </div>
+    <div class="item-card">
+        <img src=twister.jpg height= 150 width= 200 alt="Twister">
+      <h3>Twister</h3>
+      <p>₹125</p>
+      <button onclick="addToCart('Twister',125)">Add to Cart</button>
+    </div>
+    <div class="item-card">
+      <img src="slice.jpg" height= 150 width= 150 alt="Slice">
+      <h3>Slice</h3>
+      <p>₹40</p>
+      <button onclick="addToCart('Slice',40)">Add to Cart</button>
+    </div>
+    <div class="item-card">
+      <img src="slice.jpg" height= 150 width= 150 alt="Slice">
+      <h3>Slice</h3>
+      <p>₹40</p>
+      <button onclick="addToCart('Slice',40)">Add to Cart</button>
+    </div>
+  </main>
+
+
+  <!-- 🌊 Waves at bottom -->
+  <svg class="editorial"
+       xmlns="http://www.w3.org/2000/svg"
+       xmlns:xlink="http://www.w3.org/1999/xlink"
+       viewBox="0 24 150 28"
+       preserveAspectRatio="none">
+    <defs>
+      <path id="gentle-wave"
+        d="M-160 44c30 0 
+           58-18 88-18s
+           58 18 88 18 
+           58-18 88-18 
+           58 18 88 18
+           v44h-352z" />
+    </defs>
+    <g class="parallax">
+      <use xlink:href="#gentle-wave" x="50" y="2" fill="white" opacity="0.3"/>
+      <use xlink:href="#gentle-wave" x="50" y="3" fill="white" opacity="0.7"/>
+      <use xlink:href="#gentle-wave" x="50" y="6" fill="white" opacity="0.5"/>  
+    </g>
+  </svg>
+
+</body>
+</html>

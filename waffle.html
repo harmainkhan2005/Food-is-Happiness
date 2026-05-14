@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Waffle</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>WAFFLE</h1>
+    <nav>
+      <a href="dessert.html" class="btn">Home</a>
+      <a href="cart.html" class="btn">Cart</a>
+    </nav>
+  </header>
+
+  <main class="items">
+    <div class="item-card">
+      <img src="belgian.jpg" height= 150 width= 200 alt="Belgian Waffle">
+      <h3>Belgian Waffle</h3>
+      <p>₹120</p>
+      <button onclick="addToCart('Belgian Waffle',120)">Add to Cart</button>
+    </div>
+    <div class="item-card">
+      <img src="triplechocolate.jpg" height= 150 width= 200 alt="Triple chocolate">
+      <h3>Triple Chocolate</h3>
+      <p>₹140</p>
+      <button onclick="addToCart('Triple Chocolate',140)">Add to Cart</button>
+    </div>
+    <div class="item-card">
+      <img src="darkwhite.jpg" height= 150 width= 200 alt="Dark and White Fantasy">
+      <h3>Dark and White Fantasy</h3>
+      <p>₹150</p>
+      <button onclick="addToCart('Dark and White Fantasy',150)">Add to Cart</button>
+    </div>
+    <div class="item-card">
+      <img src="almondbrownie.jpg" height= 150 width= 200 alt="Almond Brownie">
+      <h3>Almond Brownie</h3>
+      <p>₹160</p>
+      <button onclick="addToCart('Almond Brownie',160)">Add to Cart</button>
+    </div>
+  </main>
+
+
+  <!-- 🌊 Waves at bottom -->
+  <svg class="editorial"
+       xmlns="http://www.w3.org/2000/svg"
+       xmlns:xlink="http://www.w3.org/1999/xlink"
+       viewBox="0 24 150 28"
+       preserveAspectRatio="none">
+    <defs>
+      <path id="gentle-wave"
+        d="M-160 44c30 0 
+           58-18 88-18s
+           58 18 88 18 
+           58-18 88-18 
+           58 18 88 18
+           v44h-352z" />
+    </defs>
+    <g class="parallax">
+      <use xlink:href="#gentle-wave" x="50" y="2" fill="white" opacity="0.3"/>
+      <use xlink:href="#gentle-wave" x="50" y="3" fill="white" opacity="0.7"/>
+      <use xlink:href="#gentle-wave" x="50" y="6" fill="white" opacity="0.5"/>  
+    </g>
+  </svg>
+
+</body>
+</html>

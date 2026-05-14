@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Food is Happiness</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="updateCartBadge()">
+  <header>
+    <h1>Food is Happiness</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cart.html">Cart <span id="cart-count" class="cart-badge"></span></a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <p style="text-align:center;margin:18px 0 0 0;color:var(--cream)">
+      Explore categories — click any button to open that menu
+    </p>
+
+    <div class="categories">
+      <div class="card">
+        <img src="fastfood.jpg" alt="Fastfood">
+        <h3>Fast food</h3>
+        <a href="fastfood.html"><button class="btn">BROWSE FASTFOOD</button></a>
+      </div>
+
+      <div class="card">
+        <img src="meal.jpg" alt="Meals">
+        <h3>Meals</h3>
+        <a href="meals.html"><button class="btn">BROWSE MEALS</button></a>
+      </div>
+
+      <div class="card">
+        <img src="dessert.jpg" alt="Dessert">
+        <h3>Dessert</h3>
+        <a href="dessert.html"><button class="btn">BROWSE DESSERT</button></a>
+      </div>
+    </div>
+  </div>
+
+  <p style="text-align:center;margin:18px 0 0 0;color:var(--cream)">
+We don't serve meals - We serve happiness
+  </p>
+
+
+
+  <!-- 🌊 Waves at bottom -->
+  <svg class="editorial"
+       xmlns="http://www.w3.org/2000/svg"
+       xmlns:xlink="http://www.w3.org/1999/xlink"
+       viewBox="0 24 150 28"
+       preserveAspectRatio="none">
+    <defs>
+      <path id="gentle-wave"
+        d="M-160 44c30 0 
+           58-18 88-18s
+           58 18 88 18 
+           58-18 88-18 
+           58 18 88 18
+           v44h-352z" />
+    </defs>
+    <g class="parallax">
+      <use xlink:href="#gentle-wave" x="50" y="2" fill="white" opacity="0.3"/>
+      <use xlink:href="#gentle-wave" x="50" y="3" fill="white" opacity="0.7"/>
+      <use xlink:href="#gentle-wave" x="50" y="6" fill="white" opacity="0.5"/>  
+    </g>
+  </svg>
+
+  <div id="toast" class="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>

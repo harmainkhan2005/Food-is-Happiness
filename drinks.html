@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drinks</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>DRINKS</h1>
+    <nav>
+      <a href="fastfood.html" class="btn">Home</a>
+      <a href="cart.html" class="btn">Cart</a>
+    </nav>
+  </header>
+
+  <main class="items">
+    <div class="item-card">
+      <img src="slice.jpg" height= 150 width= 150 alt="Slice">
+      <h3>Slice</h3>
+      <p>₹40</p>
+      <button onclick="addToCart('Slice',40)">Add to Cart</button>
+    </div>
+    <div class="item-card">
+      <img src="coldcoffee.jpg" height= 150 width= 150 alt="Cold Coffeei">
+      <h3>Cold Coffee</h3>
+      <p>₹80</p>
+      <button onclick="addToCart('Cold Coffee',80)">Add to Cart</button>
+    </div>
+    <div class="item-card">
+      <img src="pepsi.jpg" height= 150 width= 150 alt="Pepsi">
+      <h3>Pepsi</h3>
+      <p>₹50</p>
+      <button onclick="addToCart('Pepsi',50)">Add to Cart</button>
+    </div>
+    <div class="item-card">
+      <img src="sprite.jpg" height= 150 width= 150 alt="Sprite">
+      <h3>Sprite</h3>
+      <p>₹50</p>
+      <button onclick="addToCart('Sprite',50)">Add to Cart</button>
+    </div>
+    <div class="item-card">
+      <img src="tup.jpg" height= 150 width= 150 alt="Thums Up">
+      <h3>Thums Up</h3>
+      <p>₹55</p>
+      <button onclick="addToCart('Thums Up',55)">Add to Cart</button>
+    </div>
+    <div class="item-card">
+      <img src="7up.jpg" height= 150 width= 150 alt="7up">
+      <h3>7 Up</h3>
+      <p>₹50</p>
+      <button onclick="addToCart('7 Up',50)">Add to Cart</button>
+    </div>
+  </main>
+
+
+  <!-- 🌊 Waves at bottom -->
+  <svg class="editorial"
+       xmlns="http://www.w3.org/2000/svg"
+       xmlns:xlink="http://www.w3.org/1999/xlink"
+       viewBox="0 24 150 28"
+       preserveAspectRatio="none">
+    <defs>
+      <path id="gentle-wave"
+        d="M-160 44c30 0 
+           58-18 88-18s
+           58 18 88 18 
+           58-18 88-18 
+           58 18 88 18
+           v44h-352z" />
+    </defs>
+    <g class="parallax">
+      <use xlink:href="#gentle-wave" x="50" y="2" fill="white" opacity="0.3"/>
+      <use xlink:href="#gentle-wave" x="50" y="3" fill="white" opacity="0.7"/>
+      <use xlink:href="#gentle-wave" x="50" y="6" fill="white" opacity="0.5"/>  
+    </g>
+  </svg>
+
+</body>
+</html>

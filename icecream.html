@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ice Cream</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>ICE CREAM</h1>
+    <nav>
+      <a href="dessert.html" class="btn">Home</a>
+      <a href="cart.html" class="btn">Cart</a>
+    </nav>
+  </header>
+
+  <main class="items">
+    <div class="item-card">
+      <img src="chocolateicecream.jpg" height= 150 width= 200 alt="aalo tikki">
+      <h3>Chocolate Ice Cream</h3>
+      <p>₹70</p>
+      <button onclick="addToCart('Chocolate Ice Cream',70)">Add to Cart</button>
+    </div>
+    <div class="item-card">
+      <img src="hotchocolate.jpg" height= 150 width= 200 alt="Hot Chocolate with Ice Cream">
+      <h3>Hot Chocolate with Ice Cream</h3>
+      <p>₹100</p>
+      <button onclick="addToCart('Hot Chocolate with Ice Cream',100)">Add to Cart</button>
+    </div>
+    <div class="item-card">
+      <img src="oreo.jpg" height= 150 width= 200 alt="Oreo Ice Cream">
+      <h3>Oreo Ice Cream</h3>
+      <p>₹90</p>
+      <button onclick="addToCart('Oreo Ice Cream',90)">Add to Cart</button>
+    </div>
+  </main>
+
+
+  <!-- 🌊 Waves at bottom -->
+  <svg class="editorial"
+       xmlns="http://www.w3.org/2000/svg"
+       xmlns:xlink="http://www.w3.org/1999/xlink"
+       viewBox="0 24 150 28"
+       preserveAspectRatio="none">
+    <defs>
+      <path id="gentle-wave"
+        d="M-160 44c30 0 
+           58-18 88-18s
+           58 18 88 18 
+           58-18 88-18 
+           58 18 88 18
+           v44h-352z" />
+    </defs>
+    <g class="parallax">
+      <use xlink:href="#gentle-wave" x="50" y="2" fill="white" opacity="0.3"/>
+      <use xlink:href="#gentle-wave" x="50" y="3" fill="white" opacity="0.7"/>
+      <use xlink:href="#gentle-wave" x="50" y="6" fill="white" opacity="0.5"/>  
+    </g>
+  </svg>
+
+</body>
+</html>

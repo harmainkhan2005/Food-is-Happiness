@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order History</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>ORDER HISTORY</h1>
+    <nav>
+      <a href="index.html" class="btn">Home</a>
+      <a href="cart.html" class="btn">Cart</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Your Orders</h2>
+    <div id="order-list"></div>
+  </main>
+
+  <script>
+    let orders = JSON.parse(localStorage.getItem("orders")) || [];
+    let orderList = document.getElementById("order-list");
+
+    if (orders.length === 0) {
+      orderList.innerHTML = "<p>No previous orders found.</p>";
+    } else {
+      orders.forEach(order => {
+        let div = document.createElement("div");
+        div.classList.add("order-card");
+        div.innerHTML = `
+          <h3>Order Date: ${order.date}</h3>
+          <p><strong>Name:</strong> ${order.customer.name}</p>
+          <p><strong>Phone:</strong> ${order.customer.phone}</p>
+          <p><strong>Address:</strong> ${order.customer.address}</p>
+          <p><strong>Items:</strong></p>
+          <ul>
+            ${order.items.map(i => `<li>${i.name} × ${i.qty} = ₹${i.price * i.qty}</li>`).join("")}
+          </ul>
+          <hr>
+        `;
+        orderList.appendChild(div);
+      });
+    }
+  </script>
+</body>
+</html>

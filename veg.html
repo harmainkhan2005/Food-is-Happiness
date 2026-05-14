@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veg Dishes</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>VEG</h1>
+    <nav>
+      <a href="meals.html" class="btn">Home</a>
+      <a href="cart.html" class="btn">Cart</a>
+    </nav>
+  </header>
+
+  <main class="items">
+    <div class="item-card">
+      <img src="pavbhaji.jpg" height= 150 width= 200 alt="Pav Bhaji">
+      <h3>Pav Bhaji</h3>
+      <p>₹120</p>
+      <button onclick="addToCart('Pav Bhaji',120)">Add to Cart</button>
+    </div>
+    <div class="item-card">
+      <img src="cholebhature.jpg" height= 150 width= 200 alt="Chole Bhature">
+      <h3>Chole Bhature</h3>
+      <p>₹130</p>
+      <button onclick="addToCart('Chole Bhature',130)">Add to Cart</button>
+    </div>
+    <div class="item-card">
+      <img src="masaladosa.jpg" height= 150 width= 200 alt="Masala Dosa">
+      <h3>Masala Dosa</h3>
+      <p>₹110</p>
+      <button onclick="addToCart('Masala Dosa',110)">Add to Cart</button>
+    </div>
+    <div class="item-card">
+      <img src="puribhaji.jpg" height= 150 width= 200 alt="Puri Bhaji">
+      <h3>Puri Bhaji</h3>
+      <p>₹100</p>
+      <button onclick="addToCart('Puri Bhaji',100)">Add to Cart</button>
+    </div>
+  </main>
+
+
+  <!-- 🌊 Waves at bottom -->
+  <svg class="editorial"
+       xmlns="http://www.w3.org/2000/svg"
+       xmlns:xlink="http://www.w3.org/1999/xlink"
+       viewBox="0 24 150 28"
+       preserveAspectRatio="none">
+    <defs>
+      <path id="gentle-wave"
+        d="M-160 44c30 0 
+           58-18 88-18s
+           58 18 88 18 
+           58-18 88-18 
+           58 18 88 18
+           v44h-352z" />
+    </defs>
+    <g class="parallax">
+      <use xlink:href="#gentle-wave" x="50" y="2" fill="white" opacity="0.3"/>
+      <use xlink:href="#gentle-wave" x="50" y="3" fill="white" opacity="0.7"/>
+      <use xlink:href="#gentle-wave" x="50" y="6" fill="white" opacity="0.5"/>  
+    </g>
+  </svg>
+
+</body>
+</html>

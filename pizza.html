@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>PIZZA</h1>
+    <nav>
+      <a href="fastfood.html" class="btn">Home</a>
+      <a href="cart.html" class="btn">Cart</a>
+    </nav>
+  </header>
+
+  <main class="items">
+    <div class="item-card">
+        <img src=margh.jpg height= 150 width= 150 alt="Margherita Pizza">
+      <h3>Margherita Pizza</h3>
+      <p>₹120</p>
+      <button onclick="addToCart('Margherita Pizza',120)">Add to Cart</button>
+    </div>
+    <div class="item-card">
+        <img src=chickenpizza.jpg height= 150 width= 150 alt="Chicken Tikka Cheese Pizza">
+      <h3>Chicken Tikka Cheese Pizza</h3>
+      <p>₹150</p>
+      <button onclick="addToCart('Chicken Tikka Cheese Pizza',150)">Add to Cart</button>
+    </div>
+    <div class="item-card">
+        <img src=paneerpizza.jpg height= 150 width= 150 alt="Paneer Tandoori Cheese Pizza">
+      <h3>Paneer Tandoori Cheese Pizza</h3>
+      <p>₹140</p>
+      <button onclick="addToCart('Paneer Tandoori Cheese Pizza',140)">Add to Cart</button>
+    </div>
+
+    <div class="item-card">
+        <img src=vegpizza.jpg height= 150 width= 150 alt="Veggie Paradise Pizza">
+      <h3>Veggie Paradise Pizza</h3>
+      <p>₹140</p>
+      <button onclick="addToCart('Veggie Paradise Pizza',125)">Add to Cart</button>
+    </div>
+    <div class="item-card">
+        <img src=corn.jpg height= 150 width= 150 alt="Corn & Cheese">
+      <h3>Corn & Cheese</h3>
+      <p>₹140</p>
+      <button onclick="addToCart('Corn & Cheese',130)">Add to Cart</button>
+    </div>
+    <div class="item-card">
+        <img src=mexpizza.jpg height= 150 width= 150 alt="Mexican Fiesta">
+      <h3>Mexican Fiesta</h3>
+      <p>₹140</p>
+      <button onclick="addToCart('Mexican Fiesta',130)">Add to Cart</button>
+    </div>
+
+
+  <!-- 🌊 Waves at bottom -->
+  <svg class="editorial"
+       xmlns="http://www.w3.org/2000/svg"
+       xmlns:xlink="http://www.w3.org/1999/xlink"
+       viewBox="0 24 150 28"
+       preserveAspectRatio="none">
+    <defs>
+      <path id="gentle-wave"
+        d="M-160 44c30 0 
+           58-18 88-18s
+           58 18 88 18 
+           58-18 88-18 
+           58 18 88 18
+           v44h-352z" />
+    </defs>
+    <g class="parallax">
+      <use xlink:href="#gentle-wave" x="50" y="2" fill="white" opacity="0.3"/>
+      <use xlink:href="#gentle-wave" x="50" y="3" fill="white" opacity="0.7"/>
+      <use xlink:href="#gentle-wave" x="50" y="6" fill="white" opacity="0.5"/>  
+    </g>
+  </svg>
+
+</body>
+</html>
